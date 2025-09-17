@@ -1,3 +1,3 @@
 // Strings
-var brand = "Amigoscode"
+var brand = "Teachstack"
 console.log(brand)

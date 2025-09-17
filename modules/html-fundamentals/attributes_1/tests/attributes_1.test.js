@@ -17,11 +17,11 @@ describe("comments", () => {
     const link = global.dom.window.document.querySelector("a");
 
     expect(link).not.toBeNull();
-    expect(link.textContent).toBe("Visit Amigoscode");
+    expect(link.textContent).toBe("Visit Teachstack");
     const href = link.getAttribute("href");
     expect(href).toBeOneOf([
-      "https://www.amigoscode.com",
-      "https://amigoscode.com",
+      "https://www.teachstack.io",
+      "https://teachstack.io",
     ]);
   });
 });

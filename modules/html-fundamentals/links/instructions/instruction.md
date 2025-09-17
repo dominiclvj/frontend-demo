@@ -4,9 +4,9 @@ code, pre {
 }
 </style>
 
-# What Are Tags?
+# Links
 
-## Links
+## Learning
 Hyperlinks are what make the web *the web*. They allow you to connect one page to another, whether that page is on your own site or hosted somewhere else.
 
 Hyperlinks are created using the ```<a>``` (anchor) tag with the href attribute, which specifies the destination of the link. You already built one to the Teachstack website in an earlier lesson.
