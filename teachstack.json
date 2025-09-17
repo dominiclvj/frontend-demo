@@ -2,18 +2,29 @@
   "languages": [
     {
       "language": "browser"
+    },
+    {
+      "language": "node",
+      "version": "22"
     }
   ],
   "modules": [
     {
-      "name": "Sandbox",
-      "dir": "sandbox",
+      "name": "HTML Fundamentals",
+      "dir": "html-fundamentals",
       "exercises": [
         {
-          "name": "Sandbox",
-          "dir": "sandbox",
-          "initialFiles": ["index.html", "index.js"],
-          "tests": [],
+          "skippable": true,
+          "name": "HTML Introduction",
+          "dir": "html_introduction",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "lets begin",
+              "name": "Let's begin!",
+              "description": "Click 'Next' to proceed to the first lesson"
+            }
+          ],
           "scripts": [
             {
               "language": "browser",
@@ -22,14 +33,450 @@
           ]
         },
         {
-          "name": "Sandbox 2",
-          "dir": "sandbox_2",
-          "initialFiles": ["index.html", "index.js"],
-          "tests": [],
+          "name": "What Are Tags?",
+          "dir": "what_are_tags",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "add title",
+              "name": "Add <title> tag content",
+              "description": "Add your name to <title> tag so that it reads 'Teachstack'."
+            },
+            {
+              "test": "add header",
+              "name": "Write your name inside a <h1> tag",
+              "description": "Add your first heading in the body of the HTML file by writing your name between an open and closed h1 tag."
+            }
+          ],
           "scripts": [
             {
               "language": "browser",
               "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Attributes 1",
+          "dir": "attributes_1",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "link",
+              "name": "Add a link to the Teachstack website",
+              "description": "Use the <a> tag to add a link to the Teachstack website (https://www.teachstack.io) with the text 'Visit Teachstack'."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Attributes 2",
+          "dir": "attributes_2",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "input",
+              "name": "Add an input tag to collect user name",
+              "description": "Use the <input> tag to collect a user's name. The input field should have placeholder text that says 'Enter your name'."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "H1 to H6 Tags",
+          "dir": "h1_to_h6_tags",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "headings",
+              "name": "Add three more headings using h4, h5, and h6 tags",
+              "description": "Expand your website by adding three additional headings using the h4, h5, and h6 tags. Each heading should contain any text of your choice."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "Paragraphs",
+          "dir": "paragraphs",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "paragraphs",
+              "name": "Add two paragraphs using the <p> tag",
+              "description": "Add two paragraphs to your webpage under any of the existing headings. Each paragraph should contain any text of your choice."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "Lists",
+          "dir": "lists",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "unordered list",
+              "name": "Write your to-do list",
+              "description": "Use an unordered list to write three items on your to-do list for tomorrow."
+            },
+            {
+              "test": "ordered list",
+              "name": "List your top three favorite movies",
+              "description": "Use an ordered list to rank your top three favorite movies."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "Links",
+          "dir": "links",
+          "initialFiles": ["lists.html", "pages/contact.html", "index.html"],
+          "tests": [
+            {
+              "test": "list link",
+              "name": "Add a link to the Lists page",
+              "description": "Use a relative path to create a link to the Lists page with the text 'Lists'."
+            },
+            {
+              "test": "contact link",
+              "name": "Add a link to the Contact page",
+              "description": "Use a relative path to create a link to the Contact page with the text 'Newsletter'."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "Buttons",
+          "dir": "buttons",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "button text",
+              "name": "Name the blank button",
+              "description": "Add some text to the first button on the page so that it reads 'click me'."
+            },
+            {
+              "test": "button colour",
+              "name": "Change the colour of the red button",
+              "description": "Change the style attribute of the red button and make it a different colour."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "Tables",
+          "dir": "tables",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "add row",
+              "name": "Add another row to the table",
+              "description": "Add another entry to the table, defining an id, name and age."
+            },
+            {
+              "test": "double border",
+              "name": "Double the border width of the table",
+              "description": "Increase the border width of the table to 2 pixels by modifying the CSS in the <style> tag."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "Working with Images",
+          "dir": "working_with_images",
+          "initialFiles": ["images.html"],
+          "tests": [
+            {
+              "test": "embed",
+              "name": "Embed the man-working.jpg image in the webpage",
+              "description": "Use an image tag to embed the image stored in your website's local directory."
+            },
+            {
+              "test": "adjust",
+              "name": "Adjust the size of the image",
+              "description": "Use attributes to make the image 300 pixels wide and 200 pixels tall."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "images.html"
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "Divs",
+          "dir": "divs",
+          "initialFiles": ["divs.html"],
+          "tests": [
+            {
+              "test": "div with p",
+              "name": "Add a new section of content containing a paragraph of text",
+              "description": "Use the <div> tag to create a new section on the webpage. Inside this section, add a paragraph of text using the <p> tag."
+            },
+            {
+              "test": "add style",
+              "name": "Add styling to the new section",
+              "description": "Add attributes to the <div> tag to give it a background color of your choice and a border."
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "divs.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JS Fundamentals",
+      "dir": "js-fundamentals",
+      "exercises": [
+        {
+          "skippable": true,
+          "name": "JavaScript Introduction",
+          "dir": "javascript_introduction",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "lets begin",
+              "name": "Let's begin!",
+              "description": "Click 'Next' to proceed to the first lesson"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "comments",
+          "dir": "comments",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "comments.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["comments.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "added a comment",
+              "name": "Add a single-line comment",
+              "description": "Add a single-line comment to the file, with whatever content you like."
+            },
+            {
+              "test": "added a multiline comment",
+              "name": "Add a multi-line comment",
+              "description": "Add a multi-line comment to the file, with whatever content you like."
+            }
+          ]
+        },
+        {
+          "name": "quotes",
+          "dir": "quotes",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "quotes.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["quotes.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "try both quotes",
+              "name": "Try using single quotes to print",
+              "description": "Add an extra 'Hello World JS' console.log that uses single quotes (')."
+            },
+            {
+              "test": "use a semicolon",
+              "name": "Add a semicolon",
+              "description": "Use a semicolon at the end of one of your console.log statements and see what happens."
+            }
+          ]
+        },
+        {
+          "name": "variables",
+          "dir": "variables",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "variables.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["variables.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "print string",
+              "name": "Print a string variable",
+              "description": "Print a string variable to the console."
+            },
+            {
+              "test": "print integer",
+              "name": "Print an integer variable",
+              "description": "Print an integer variable to the console."
+            },
+            {
+              "test": "print boolean",
+              "name": "Print a boolean variable",
+              "description": "Print a boolean variable to the console."
+            },
+            {
+              "test": "print float",
+              "name": "Print a decimal variable",
+              "description": "Print a decimal variable to the console."
+            },
+            {
+              "test": "print date",
+              "name": "Print a date",
+              "description": "Print a date variable to the console."
+            },
+            {
+              "test": "print object",
+              "name": "Print an object variable",
+              "description": "Print an object variable to the console."
+            },
+            {
+              "test": "print undefined",
+              "name": "Print an undefined variable",
+              "description": "Print an undefined variable to the console."
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "datatypes",
+          "dir": "datatypes",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "datatypes.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["datatypes.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "print types",
+              "name": "Print the datatype of each variable",
+              "description": "Use the 'typeof' operator to print the datatype of each variable."
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "strings",
+          "dir": "strings",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "strings.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["strings.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "print the length of a string",
+              "name": "Print the length of a string",
+              "description": "Find the length of a string with the .length property and print the result."
+            },
+            {
+              "test": "print the uppercase string",
+              "name": "Print an uppercase string",
+              "description": "Convert a string with the .toUpperCase() method and print the result."
+            },
+            {
+              "test": "print concat string",
+              "name": "Print a concatenated string",
+              "description": "Concatenate two strings with the '+' operator and print the result."
+            }
+          ]
+        },
+        {
+          "skippable": true,
+          "name": "objects",
+          "dir": "objects",
+          "scripts": [
+            {
+              "language": "node",
+              "script": "objects.js",
+              "args": []
+            }
+          ],
+          "initialFiles": ["objects.js"],
+          "servers": [],
+          "tests": [
+            {
+              "test": "create an object",
+              "name": "Create an object",
+              "description": "Define an object that includes a string, number, boolean, decimal, date, and nested object property."
+            },
+            {
+              "test": "print an object property",
+              "name": "Print a property",
+              "description": "Use console.log to print one property from your object."
+            },
+            {
+              "test": "print the object values",
+              "name": "Print all values",
+              "description": "Use Object.values to print all values from your object as an array."
             }
           ]
         }
@@ -37,4 +484,3 @@
     }
   ]
 }
-
