@@ -1,9 +1,6 @@
 {
   "languages": [
     {
-      "language": "browser"
-    },
-    {
       "language": "node",
       "version": "22"
     }
@@ -28,7 +25,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -52,7 +49,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -71,7 +68,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -90,7 +87,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -109,7 +106,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -129,7 +126,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -154,7 +151,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -179,7 +176,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -204,7 +201,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -229,7 +226,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
@@ -254,7 +251,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "images.html",
             "port": 3000
           }
@@ -279,7 +276,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "divs.html",
             "port": 3000
           }
@@ -305,7 +302,7 @@
           "scripts": [],
           "servers": [],
           "browser": {
-            "type": "browser",
+            "type": "file",
             "file": "index.html",
             "port": 3000
           }
